@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FlurryAnalyticsUtils.h"
 
 @interface ViewController ()
 
@@ -16,12 +17,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)read:(id)sender
+{
+    [FlurryAnalyticsUtils logEvent:@"Reading"];
+}
+
+- (IBAction)sleep:(id)sender
+{
+    [FlurryAnalyticsUtils logEvent:@"Sleeping"];
+}
+
+- (IBAction)sleepleft:(id)sender
+{
+    [FlurryAnalyticsUtils logEvent:@"Sleeping" parameters:@{@"Left":@"no good"}];
+}
+
+- (IBAction)sleepup:(id)sender
+{
+    [FlurryAnalyticsUtils logEvent:@"Sleeping" parameters:@{@"Up":@"hard"}];
+}
+
+- (IBAction)sleepright:(id)sender
+{
+    [FlurryAnalyticsUtils logEvent:@"Sleeping" parameters:@{@"Right":@"damn good"}];
+}
+
+- (IBAction)sleepWithTime:(id)sender
+{
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime" parameters:nil timed:YES];
+}
+
+- (IBAction)sleepWithEnd:(id)sender
+{
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime"];
+}
 @end
