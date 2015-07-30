@@ -10,7 +10,7 @@
 + (void)logEvent:(NSString *)eventName timed:(BOOL)track;
 
 + (void)endTimedEvent:(NSString *)eventName;
-+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)dictionary;
++ (void)endTimedEvent:(NSString *)eventName andParameters:(NSDictionary *)dictionary;
 
 + (void)logEvent:(NSString *)eventName parameters:(NSDictionary *)dictionary;
 + (void)logEvent:(NSString *)eventName parameters:(NSDictionary *)dictionary timed:(BOOL)track;
@@ -23,6 +23,6 @@
 /**
  *  Flurry policy says ids should be hashed before sending
  */
-+ (void)setUserId:(NSString *)string;
++ (void)logUserID:(NSString *)string;
 
 @end

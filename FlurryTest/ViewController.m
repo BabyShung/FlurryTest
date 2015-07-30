@@ -17,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [FlurryAnalyticsUtils logAllPageViews:self.navigationController];
+    [FlurryAnalyticsUtils logPageView];
+    
+    [FlurryAnalyticsUtils logUserID:@"1234567"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,7 +55,7 @@
 
 - (IBAction)sleepWithTime:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime" parameters:nil timed:YES];
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime" timed:YES];
 }
 
 - (IBAction)sleepWithEnd:(id)sender

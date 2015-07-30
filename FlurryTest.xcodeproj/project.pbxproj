@@ -18,6 +18,8 @@
 		E619132D1B6A84CE004C93E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619132C1B6A84CE004C93E5 /* Security.framework */; };
 		E619132F1B6A84D6004C93E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619132E1B6A84D6004C93E5 /* SystemConfiguration.framework */; };
 		E61913321B6A84EE004C93E5 /* FlurryAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E61913301B6A84EE004C93E5 /* FlurryAnalyticsUtils.m */; };
+		E61913351B6AA14C004C93E5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61913341B6AA14C004C93E5 /* NextViewController.m */; };
+		E61913381B6AA27B004C93E5 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = E61913371B6AA27B004C93E5 /* DDData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		E619132E1B6A84D6004C93E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E61913301B6A84EE004C93E5 /* FlurryAnalyticsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlurryAnalyticsUtils.m; sourceTree = "<group>"; };
 		E61913311B6A84EE004C93E5 /* FlurryAnalyticsUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAnalyticsUtils.h; sourceTree = "<group>"; };
+		E61913331B6AA14C004C93E5 /* NextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NextViewController.h; sourceTree = "<group>"; };
+		E61913341B6AA14C004C93E5 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
+		E61913361B6AA27B004C93E5 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		E61913371B6AA27B004C93E5 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,8 @@
 		E61912F51B6A8475004C93E5 = {
 			isa = PBXGroup;
 			children = (
+				E61913361B6AA27B004C93E5 /* DDData.h */,
+				E61913371B6AA27B004C93E5 /* DDData.m */,
 				E61913311B6A84EE004C93E5 /* FlurryAnalyticsUtils.h */,
 				E61913301B6A84EE004C93E5 /* FlurryAnalyticsUtils.m */,
 				E619132E1B6A84D6004C93E5 /* SystemConfiguration.framework */,
@@ -104,6 +112,8 @@
 				E61913061B6A8475004C93E5 /* AppDelegate.m */,
 				E61913081B6A8475004C93E5 /* ViewController.h */,
 				E61913091B6A8475004C93E5 /* ViewController.m */,
+				E61913331B6AA14C004C93E5 /* NextViewController.h */,
+				E61913341B6AA14C004C93E5 /* NextViewController.m */,
 				E619130B1B6A8475004C93E5 /* Main.storyboard */,
 				E619130E1B6A8475004C93E5 /* Images.xcassets */,
 				E61913101B6A8475004C93E5 /* LaunchScreen.xib */,
@@ -249,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E61913351B6AA14C004C93E5 /* NextViewController.m in Sources */,
 				E619130A1B6A8475004C93E5 /* ViewController.m in Sources */,
 				E61913071B6A8475004C93E5 /* AppDelegate.m in Sources */,
+				E61913381B6AA27B004C93E5 /* DDData.m in Sources */,
 				E61913321B6A84EE004C93E5 /* FlurryAnalyticsUtils.m in Sources */,
 				E61913041B6A8475004C93E5 /* main.m in Sources */,
 			);

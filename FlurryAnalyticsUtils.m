@@ -1,6 +1,7 @@
 
 #import "FlurryAnalyticsUtils.h"
 #import "Flurry.h"
+#import "DDData.h"
 
 @implementation FlurryAnalyticsUtils
 
@@ -31,10 +32,10 @@
 
 + (void)endTimedEvent:(NSString *)eventName
 {
-    [self endTimedEvent:eventName withParameters:nil];
+    [self endTimedEvent:eventName andParameters:nil];
 }
 
-+ (void)endTimedEvent:(NSString *)eventName withParameters:(NSDictionary *)dictionary
++ (void)endTimedEvent:(NSString *)eventName andParameters:(NSDictionary *)dictionary
 {
     [Flurry endTimedEvent:eventName withParameters:dictionary];
 }
@@ -59,10 +60,11 @@
     [Flurry logAllPageViewsForTarget:navigationController];
 }
 
-+ (void)setUserId:(NSString *)string
++ (void)logUserID:(NSString *)string
 {
-//    NSString *hashedString = [[[string dataUsingEncoding:NSUTF8StringEncoding] md5Digest] hexStringValue];
-//    [Flurry setUserID:hashedString];
+    NSString *hashedString = [[[string dataUsingEncoding:NSUTF8StringEncoding] md5Digest] hexStringValue];
+    [Flurry setUserID:hashedString];
+    NSLog(@"HASHED_STRING:  %@",hashedString);
 }
 
 @end
