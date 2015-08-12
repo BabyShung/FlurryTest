@@ -55,13 +55,14 @@
 
 - (IBAction)sleepWithTime:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime_0" parameters:@{@"feature":@"Locks",
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime_x0" parameters:@{@"feature":@"Locks",
                                                                 @"location":@"Work",
-                                                                @"network type":@"LTE"} timed:YES];
+                                                                @"network type":@"LTE",
+                                                                  @"StartTime":[NSDate date]} timed:YES];
 }
 
 - (IBAction)sleepWithEnd:(id)sender
 {
-    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_0" andParameters:nil];
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_x0" andParameters:@{@"EndTime":[NSDate date]}];
 }
 @end

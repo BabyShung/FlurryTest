@@ -10,12 +10,9 @@
     [Flurry startSession:@"76YCPNW6SQZQ27DRQQZP"];
 }
 
-+ (void)startWatchExtensionSession
-{
-    
-}
-
-+ (void)logError:(NSString *)errorName message:(NSString *)message exception:(NSException *)exception
++ (void)logError:(NSString *)errorName
+         message:(NSString *)message
+       exception:(NSException *)exception
 {
     [Flurry logError:errorName message:message exception:exception];
 }
@@ -25,7 +22,8 @@
     [Flurry logEvent:eventName];
 }
 
-+ (void)logEvent:(NSString *)eventName timed:(BOOL)track
++ (void)logEvent:(NSString *)eventName
+           timed:(BOOL)track
 {
     [Flurry logEvent:eventName timed:track];
 }
@@ -35,23 +33,23 @@
     [self endTimedEvent:eventName andParameters:nil];
 }
 
-+ (void)endTimedEvent:(NSString *)eventName andParameters:(NSDictionary *)dictionary
++ (void)endTimedEvent:(NSString *)eventName
+        andParameters:(NSDictionary *)dictionary
 {
     [Flurry endTimedEvent:eventName withParameters:dictionary];
 }
 
-+ (void)logEvent:(NSString *)eventName parameters:(NSDictionary *)dictionary
++ (void)logEvent:(NSString *)eventName
+      parameters:(NSDictionary *)dictionary
 {
     [Flurry logEvent:eventName withParameters:dictionary];
 }
 
-+ (void)logEvent:(NSString *)eventName parameters:(NSDictionary *)dictionary timed:(BOOL)track
++ (void)logEvent:(NSString *)eventName
+      parameters:(NSDictionary *)dictionary
+           timed:(BOOL)track
 {
     [Flurry logEvent:eventName withParameters:dictionary timed:track];
-    
-    
-    
-    
 }
 
 + (void)logPageView

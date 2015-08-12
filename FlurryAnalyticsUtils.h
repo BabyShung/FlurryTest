@@ -4,7 +4,6 @@
 @interface FlurryAnalyticsUtils : NSObject
 
 + (void)startAppSession;
-+ (void)startWatchExtensionSession;
 
 + (void)logEvent:(NSString *)eventName;
 + (void)logEvent:(NSString *)eventName timed:(BOOL)track;

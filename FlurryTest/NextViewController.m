@@ -31,26 +31,29 @@
 
 - (IBAction)sleepTime2:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_1" parameters:@{@"feature":@"Arming",
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_x1" parameters:@{@"feature":@"Arming",
                                                                            @"location":@"home",
-                                                                           @"network type":@"WiFi"} timed:YES];
+                                                                           @"network type":@"WiFi",
+                                                                           @"StartTime":[NSDate date]} timed:YES];
 }
 
 - (IBAction)endSleepTime2:(id)sender
 {
-    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_1" andParameters:nil];
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_x1" andParameters:@{@"EndTime":[NSDate date]}];
 }
 
 - (IBAction)sleepTime3:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_2" parameters:@{@"feature":@"Locks",
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_x3" parameters:@{@"feature":@"Locks",
                                                                            @"location":@"Work",
-                                                                           @"network type":@"LTE"} timed:YES];
+                                                                           @"network type":@"LTE",
+                                                                           @"StartTime":[NSDate date]} timed:YES];
 }
 
 - (IBAction)endSleepTime3:(id)sender
 {
-    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_2" andParameters:@{@"Mood":@"Great",
-                                                                                   @"Battery":@"30%"}];
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_x3" andParameters:@{@"Mood":@"Great",
+                                                                                   @"Battery":@"30%",
+                                                                                @"EndTime":[NSDate date]}];
 }
 @end
