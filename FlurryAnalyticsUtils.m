@@ -7,7 +7,7 @@
 
 + (void)startAppSession
 {
-    [Flurry startSession:@"SBM35V2BK2WZXX83P7F9"];
+    [Flurry startSession:@"76YCPNW6SQZQ27DRQQZP"];
 }
 
 + (void)startWatchExtensionSession
@@ -48,6 +48,10 @@
 + (void)logEvent:(NSString *)eventName parameters:(NSDictionary *)dictionary timed:(BOOL)track
 {
     [Flurry logEvent:eventName withParameters:dictionary timed:track];
+    
+    
+    
+    
 }
 
 + (void)logPageView

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Aqb-0V-FsA">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -204,11 +205,106 @@
                                     <action selector="dismiss:" destination="QDG-bH-HyM" eventType="touchUpInside" id="shJ-i2-7jt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcu-bN-dcc">
+                                <rect key="frame" x="36" y="47" width="135" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.74609375" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1pP-7V-9wD"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="BoA-Wp-8pQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="jsb-aa-Aia"/>
+                                    <constraint firstAttribute="width" constant="135" id="xJp-FW-6Kz"/>
+                                </constraints>
+                                <state key="normal" title="sleep with time">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BoA-Wp-8pQ"/>
+                                        <exclude reference="1pP-7V-9wD"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sleepTime2:" destination="QDG-bH-HyM" eventType="touchUpInside" id="LKk-qD-mQF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMZ-MA-8Vc">
+                                <rect key="frame" x="249" y="47" width="135" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.74609375" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3hs-hR-dwk"/>
+                                    <constraint firstAttribute="width" constant="100" id="tIW-na-S7h"/>
+                                </constraints>
+                                <state key="normal" title="sleep end">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tIW-na-S7h"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="endSleepTime2:" destination="QDG-bH-HyM" eventType="touchUpInside" id="70A-zG-0SK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DpN-px-Zwe">
+                                <rect key="frame" x="36" y="114" width="135" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.74609375" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="k1z-nI-ZQy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="szF-B9-adO"/>
+                                    <constraint firstAttribute="width" constant="100" id="tAz-36-MPH"/>
+                                    <constraint firstAttribute="width" constant="135" id="utb-Vu-LPq"/>
+                                </constraints>
+                                <state key="normal" title="sleep with time 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="szF-B9-adO"/>
+                                        <exclude reference="tAz-36-MPH"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="sleepTime3:" destination="QDG-bH-HyM" eventType="touchUpInside" id="dHC-5u-DvX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkZ-mC-gJC">
+                                <rect key="frame" x="249" y="114" width="135" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.74609375" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="IKi-mP-dQu"/>
+                                    <constraint firstAttribute="width" constant="100" id="kqC-59-rFI"/>
+                                </constraints>
+                                <state key="normal" title="sleep end 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="kqC-59-rFI"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="endSleepTime3:" destination="QDG-bH-HyM" eventType="touchUpInside" id="hE7-fa-zcx"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gkZ-mC-gJC" firstAttribute="leading" secondItem="DpN-px-Zwe" secondAttribute="trailing" constant="78" id="64F-9c-vct"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="centerY" secondItem="HMZ-MA-8Vc" secondAttribute="centerY" id="Ab7-Pw-3gV"/>
+                            <constraint firstItem="HMZ-MA-8Vc" firstAttribute="leading" secondItem="qcu-bN-dcc" secondAttribute="trailing" constant="78" id="AyD-oc-aYI"/>
+                            <constraint firstItem="DpN-px-Zwe" firstAttribute="centerY" secondItem="gkZ-mC-gJC" secondAttribute="centerY" id="F8h-gv-dI6"/>
                             <constraint firstAttribute="centerY" secondItem="m5U-XT-wr8" secondAttribute="centerY" id="K9j-Wb-yL3"/>
+                            <constraint firstItem="DpN-px-Zwe" firstAttribute="width" secondItem="gkZ-mC-gJC" secondAttribute="width" id="U6f-qz-GRy"/>
                             <constraint firstAttribute="centerX" secondItem="m5U-XT-wr8" secondAttribute="centerX" id="YNf-Ob-eGh"/>
+                            <constraint firstItem="DpN-px-Zwe" firstAttribute="height" secondItem="gkZ-mC-gJC" secondAttribute="height" id="a7R-lk-i3U"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="trailing" secondItem="DpN-px-Zwe" secondAttribute="trailing" id="bHU-do-xVO"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="leading" secondItem="TmJ-hB-ZJt" secondAttribute="leadingMargin" constant="20" id="cge-AK-qze"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="top" secondItem="GMW-Sg-Rcd" secondAttribute="bottom" constant="27" id="gOn-9T-Nqb"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="leading" secondItem="DpN-px-Zwe" secondAttribute="leading" id="lsL-On-KrH"/>
+                            <constraint firstItem="DpN-px-Zwe" firstAttribute="top" secondItem="qcu-bN-dcc" secondAttribute="bottom" constant="17" id="oOg-HL-OyN"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="height" secondItem="HMZ-MA-8Vc" secondAttribute="height" id="vBP-mE-grd"/>
+                            <constraint firstItem="qcu-bN-dcc" firstAttribute="width" secondItem="HMZ-MA-8Vc" secondAttribute="width" id="wOn-Zj-SGg"/>
                         </constraints>
                     </view>
                 </viewController>

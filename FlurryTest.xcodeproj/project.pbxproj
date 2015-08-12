@@ -14,12 +14,12 @@
 		E619130F1B6A8475004C93E5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E619130E1B6A8475004C93E5 /* Images.xcassets */; };
 		E61913121B6A8475004C93E5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61913101B6A8475004C93E5 /* LaunchScreen.xib */; };
 		E619131E1B6A8475004C93E5 /* FlurryTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E619131D1B6A8475004C93E5 /* FlurryTestTests.m */; };
-		E619132B1B6A84A8004C93E5 /* libFlurry_6.5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E619132A1B6A84A8004C93E5 /* libFlurry_6.5.0.a */; };
 		E619132D1B6A84CE004C93E5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619132C1B6A84CE004C93E5 /* Security.framework */; };
 		E619132F1B6A84D6004C93E5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E619132E1B6A84D6004C93E5 /* SystemConfiguration.framework */; };
 		E61913321B6A84EE004C93E5 /* FlurryAnalyticsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E61913301B6A84EE004C93E5 /* FlurryAnalyticsUtils.m */; };
 		E61913351B6AA14C004C93E5 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E61913341B6AA14C004C93E5 /* NextViewController.m */; };
 		E61913381B6AA27B004C93E5 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = E61913371B6AA27B004C93E5 /* DDData.m */; };
+		E6F009621B752A6900E84139 /* libFlurry_6.7.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6F009611B752A6900E84139 /* libFlurry_6.7.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,9 +46,6 @@
 		E61913171B6A8475004C93E5 /* FlurryTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlurryTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E619131C1B6A8475004C93E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E619131D1B6A8475004C93E5 /* FlurryTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlurryTestTests.m; sourceTree = "<group>"; };
-		E61913281B6A84A8004C93E5 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
-		E61913291B6A84A8004C93E5 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
-		E619132A1B6A84A8004C93E5 /* libFlurry_6.5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.5.0.a; sourceTree = "<group>"; };
 		E619132C1B6A84CE004C93E5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E619132E1B6A84D6004C93E5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E61913301B6A84EE004C93E5 /* FlurryAnalyticsUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlurryAnalyticsUtils.m; path = ../FlurryAnalyticsUtils.m; sourceTree = "<group>"; };
@@ -57,6 +54,9 @@
 		E61913341B6AA14C004C93E5 /* NextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		E61913361B6AA27B004C93E5 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DDData.h; path = ../DDData.h; sourceTree = "<group>"; };
 		E61913371B6AA27B004C93E5 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DDData.m; path = ../DDData.m; sourceTree = "<group>"; };
+		E6F0095F1B752A6900E84139 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		E6F009601B752A6900E84139 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		E6F009611B752A6900E84139 /* libFlurry_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.7.0.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E619132F1B6A84D6004C93E5 /* SystemConfiguration.framework in Frameworks */,
+				E6F009621B752A6900E84139 /* libFlurry_6.7.0.a in Frameworks */,
 				E619132D1B6A84CE004C93E5 /* Security.framework in Frameworks */,
-				E619132B1B6A84A8004C93E5 /* libFlurry_6.5.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +149,9 @@
 		E61913271B6A84A8004C93E5 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				E61913281B6A84A8004C93E5 /* Flurry.h */,
-				E61913291B6A84A8004C93E5 /* FlurryWatch.h */,
-				E619132A1B6A84A8004C93E5 /* libFlurry_6.5.0.a */,
+				E6F0095F1B752A6900E84139 /* Flurry.h */,
+				E6F009601B752A6900E84139 /* FlurryWatch.h */,
+				E6F009611B752A6900E84139 /* libFlurry_6.7.0.a */,
 			);
 			name = Flurry;
 			path = ../3rdParty/Flurry;
@@ -406,6 +406,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3rdParty/Flurry",
+					"$(PROJECT_DIR)/3rdParty/Flurry6.5",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -420,6 +421,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/3rdParty/Flurry",
+					"$(PROJECT_DIR)/3rdParty/Flurry6.5",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -478,6 +480,7 @@
 				E61913231B6A8475004C93E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E61913241B6A8475004C93E5 /* Build configuration list for PBXNativeTarget "FlurryTestTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +489,7 @@
 				E61913261B6A8475004C93E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
