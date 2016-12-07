@@ -22,6 +22,17 @@
     [FlurryAnalyticsUtils logPageView];
     
     [FlurryAnalyticsUtils logUserID:@"1234567"];
+    
+//    double time1 = [[NSDate date] timeIntervalSince1970];
+//    double time2 = CACurrentMediaTime();
+//    NSLog(@"xx %f",time1);
+//    NSLog(@"xx %f",time2);
+//    
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        NSLog(@"xx1 %f",[[NSDate date] timeIntervalSince1970] - time1);
+//        
+//        NSLog(@"xx1 %f",CACurrentMediaTime() - time2);
+//    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,14 +66,18 @@
 
 - (IBAction)sleepWithTime:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime_x0" parameters:@{@"feature":@"Locks",
+    NSString *time = [NSString stringWithFormat:@"%.4f",CACurrentMediaTime()];
+    NSLog(@"StartTime:  %@",time);
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime_VVVVV" parameters:@{@"feature":@"Locks",
                                                                 @"location":@"Work",
                                                                 @"network type":@"LTE",
-                                                                  @"StartTime":[NSDate date]} timed:YES];
+                                                                  @"StartTime":time} timed:YES];
 }
 
 - (IBAction)sleepWithEnd:(id)sender
 {
-    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_x0" andParameters:@{@"EndTime":[NSDate date]}];
+    NSString *time = [NSString stringWithFormat:@"%.4f",CACurrentMediaTime()];
+    NSLog(@"End Time:  %@",time);
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_VVVVV" andParameters:@{@"EndTime":time}];
 }
 @end

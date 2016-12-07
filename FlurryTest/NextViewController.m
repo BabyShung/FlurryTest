@@ -31,29 +31,29 @@
 
 - (IBAction)sleepTime2:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_x1" parameters:@{@"feature":@"Arming",
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_VVV1" parameters:@{@"feature":@"Arming",
                                                                            @"location":@"home",
                                                                            @"network type":@"WiFi",
-                                                                           @"StartTime":[NSDate date]} timed:YES];
+                                                                           @"StartTime":@(CACurrentMediaTime())} timed:YES];
 }
 
 - (IBAction)endSleepTime2:(id)sender
 {
-    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_x1" andParameters:@{@"EndTime":[NSDate date]}];
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_VVV1" andParameters:@{@"EndTime":@(CACurrentMediaTime())}];
 }
 
 - (IBAction)sleepTime3:(id)sender
 {
-    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_x3" parameters:@{@"feature":@"Locks",
+    [FlurryAnalyticsUtils logEvent:@"SleepingTime_withPara_VVV2" parameters:@{@"feature":@"Locks",
                                                                            @"location":@"Work",
                                                                            @"network type":@"LTE",
-                                                                           @"StartTime":[NSDate date]} timed:YES];
+                                                                           @"StartTime":@(CACurrentMediaTime())} timed:YES];
 }
 
 - (IBAction)endSleepTime3:(id)sender
 {
-    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_x3" andParameters:@{@"Mood":@"Great",
+    [FlurryAnalyticsUtils endTimedEvent:@"SleepingTime_withPara_VVV2" andParameters:@{@"Mood":@"Great",
                                                                                    @"Battery":@"30%",
-                                                                                @"EndTime":[NSDate date]}];
+                                                                                @"EndTime":@(CACurrentMediaTime())}];
 }
 @end
